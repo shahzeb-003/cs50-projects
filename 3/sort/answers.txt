@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Took the quickest for a sorted array
+
+sort2 uses: Merge Sort
+
+How do you know?: Took the quickest for unsorted array
+
+sort3 uses: Selection Sort
+
+How do you know?: Takes about the same amount of time for both sorted and unsorted lists.

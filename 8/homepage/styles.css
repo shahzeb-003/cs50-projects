@@ -1,0 +1,241 @@
+/*
+    Palette
+    https://coolors.co/palette/283d3b-197278-edddd4-c44536-772e25
+*/
+
+/* MOST PAGES */
+body {
+    /* Sets the background image as a blurred minecraft picture */
+    background-image: url("images/photos/background.jpg");
+    /* By default the image will repeat itself until the space is filled, but I just want one picture */
+    background-repeat: no-repeat;
+    /* The picture is small so it doesn't cover it all */
+    background-size: cover;
+  }
+
+  /* THE LITTLE STEVE ABOVE NAVBAR */
+  #steve {
+    /* So that I can position it where I want and it won't interfere other stuff around */
+    position: absolute;
+    /* So that it will be exactly above navbar*/
+    margin-top: -31px;
+  }
+
+  /* THE BUTTONS WASD ON RIGHT SIDE */
+  #wasd {
+    /* So that it will be fixed where I want and it won't interfere other stuff around */
+    position: fixed;
+    /* Position it 50px of the right border */
+    right: 50px;
+    /* Position it 50px of the bottom border */
+    bottom: 50px;
+    /* Makes the div a size that fits 3 buttons */
+    width: 100px;
+  }
+
+  /* TEXT ABOVE WASD BUTTONS ON RIGHT SIDE */
+  #wasd p {
+    /* Transparent Background */
+    background-color: #8896b8b3;
+    /* Rounded */
+    border-radius: 5px;
+    font-weight: bold;
+    /* Give some padding so that the border isn't too close to text */
+    padding: 5px;
+    color: white;
+    /* Shadow */
+    box-shadow: 10px 10px 10px #21130d;
+  }
+
+  #wasd button {
+    /* Rounded */
+    border-radius: 5px;
+    /* SIZE */
+    width: 30px;
+    height: auto;
+    /* So they are not clickable*/
+    pointer-events: none;
+    /* Shadow */
+    box-shadow: 10px 10px 10px #21130d;
+  }
+
+  /* W IN THE MIDDLE */
+  #w {margin: 0 0 4px 34px;}
+
+  #main-square {
+    /* Sets the background to white */
+    background-color: white;
+    /* Rounds the border */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #21130d;
+    /* So that it doesn't fill the entire page and we can actually see the background image */
+    margin: 10%;
+  }
+
+  nav {
+    /* Sets the background to that color */
+    background-color: #197278;
+    /* Rounds the top corners of the border */
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  /* GIVE SOME SPACE FOR THE ITEMS */
+  #nav-space {padding: 1.75% 5%;}
+
+  #menu {
+    /* To stay in the same line as the logo */
+    display: inline;
+    /* GO TO RIGHT SIDE */
+    float: right;
+    /* Try to align to the vertical center of the nav/nav-space */
+    padding: 0.5% 0 0 0;
+    /* Makes the menu a size that fits the items without breaking line */
+    width: 270px;
+  }
+
+  #menu li {
+    /* So that it will be a horizontal list */
+    display: inline;
+    /* Give some space to items */
+    padding-left: 5%;
+  }
+
+  /* YOU KNOW THAT SPACE, THE FIRST ONE WON'T HAVE IT BECAUSE IT MISALIGN STUFF WHEN IN MOBILE*/
+  #menu li:first-child {padding-left: 0;}
+
+  /* THE ITEMS IN MENU */
+  .pag {
+    color: white;
+    /* By default the links have a underline, but I want it without the underline */
+    text-decoration: none;
+    /* Makes it uppercase */
+    text-transform: uppercase;
+  }
+
+  .pag:hover {color: #283D3B;}
+
+  article {
+    /* Margin is good */
+    margin: 2.5% 10%;
+    /* Aligns everything in the center */
+    text-align: center;
+  }
+
+  /* THE LINES ABOVE H2 TITLE */
+  section {border-top: 1px solid gainsboro;}
+
+  /* MARGIN FOR EACH H2 TITLE */
+  .title {margin: 2.5% 0;}
+
+  /* ALIGN STUFF */
+  p, li {text-align: justify;}
+
+  img {
+    /* Modern images are rounded */
+    border-radius: 10px;
+    /* We don't want it to don't fit the screen */
+    max-width: 100%;
+    /* The height must follow the width */
+    height: auto;
+  }
+
+  /* MAKES THE ITEMS ON ACCORDION LISTS LESS LARGE */
+  .accordion li {margin: 0 10%;}
+
+
+
+  footer {
+    /* Sets the background to that color */
+    background-color: #C44536;
+    /* Rounds the bottom corners of the border */
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    /* Makes it a little thicker */
+    height: 50px;
+    /* Aligns everything in the center */
+    text-align: center;
+    /* ALIGN TO TEXT VERTICAL CENTER*/
+    padding-top: 1%;
+  }
+
+  #to-top {
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #to-top:hover {color: #772E25;}
+
+  .flex {display: flex;}
+
+  /* HOME PAGE */
+  #about-notch img {
+    height: 200px;
+  }
+
+  /* SO THAT THERE'S SOME SPACE BETWEEN IT AND THE TEXT AT THE SIDE */
+  #about-notch p {margin-left: 20px;}
+
+  /* ABOUT PAGE */
+  #github {
+    /* It's a link, it's inline by default, but inline elements don't align to correctly? */
+    display: block;
+    background-color: inherit;
+    border: 2px solid #8896b8b3;
+    /* Rounded */
+    border-radius: 10px;
+    width: 270px;
+    /* Thicker */
+    padding: 5px 0;
+    /* Align to center and give some space at the bottom */
+    margin: 0 auto 2.5% auto;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #github:hover {background-color: #96b8b3;}
+
+  /* SETTINGS FOR MOBILE */
+  @media screen and (max-width: 800px) {
+    #main-square {
+      /* No side spacing on mobile, need more horizontal space for content */
+      margin: 10% 0;
+    }
+
+    /* ALIGN NAV ITEMS TO CENTER (LOGO) */
+    nav {text-align: center;}
+
+    #menu {
+      /* Makes the menu block so that the logo will be stacked above it */
+      display: block;
+      /* Disable the right float it had */
+      float: none;
+      /* Aligns to center */
+      margin: auto;
+    }
+
+    #wasd {
+      /* No buttons on mobile */
+      visibility: hidden;
+    }
+
+    .title {
+      /* Bigger margins, better for mobile */
+      margin: 5% 0;
+    }
+
+    .flex {
+      /* Disable flex */
+      display: block;
+    }
+
+    article, #about-notch img, #github {
+      /* Bigger bottom margin, better for mobile */
+      margin-bottom: 5%;
+    }
+
+    #about-notch p {
+      /* No side margin needed if it's centered now */
+      margin: 0;
+    }
+  }
